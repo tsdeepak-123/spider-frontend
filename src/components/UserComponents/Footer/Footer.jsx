@@ -1,20 +1,25 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
   return (
-    <div class=" bg-black">
-    <div class="max-w-2xl mx-auto text-white py-10">
-        <div class="flex flex-col md:flex-row md:justify-between items-center text-sm text-white">
-            <p class="order-2 md:order-1 mt-8 md:mt-0"> Spider Interiors. </p>
-            <div class="order-1 md:order-2">
-                <span class="px-2">About us</span>
-                <span class="px-2 border-l">Contact us</span>
-                <span class="px-2 border-l">Privacy Policy</span>
-            </div>
+    <div className="bg-black">
+      <div className="max-w-2xl mx-auto text-white py-10">
+        <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-white">
+          <div className="order-1 md:order-2 mr-4">
+            <img src="/Images/spiderr.jpg" className="w-32 h-auto" alt="" /> {/* Adjust the width as needed */}
+          </div>
+          <div className="order-2 md:order-1 mt-8 md:mt-0">
+            Spider Interiors.
+          </div>
+          <div className="order-3">
+            <span className="px-2">About us</span>
+            <span className="px-2 border-l">Contact us</span>
+            <span className="px-2 border-l">Privacy Policy</span>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

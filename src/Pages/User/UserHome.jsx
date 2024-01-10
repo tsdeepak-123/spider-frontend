@@ -5,19 +5,19 @@ import Home from '../../components/UserComponents/Home/Home'
 import ContactUs from '../../components/UserComponents/ContactUs/ContactUs'
 import Profile from '../../components/UserComponents/Profile/Profile'
 import Projects from '../../components/UserComponents/Projects/Projects'
+import About from '../../components/UserComponents/About/About'
 
 
 function UserHome() {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Header/>
         <Home/>
+        <About/>
         <Profile/>
         <Projects/>
         <ContactUs/>
-        <div className='mt-14'>
         <Footer/>
-        </div>  
     </div>
   )
 }

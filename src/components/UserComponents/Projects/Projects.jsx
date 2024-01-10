@@ -13,22 +13,35 @@ function Projects() {
       backgroundColor: 'darkgray',
     },
   };
+  
   return (
-    <div className=''>
-    <div className='container mx-auto mt-14'>
-      <div className='flex justify-center mb-8'>
-        <h1 className='text-4xl font-extrabold text-gray-800 tracking-wider'>Explore Our Projects</h1>
+    <div>
+      <div className='container mx-auto mt-14'>
+        <div className='flex justify-center mb-8'>
+          <h1 className='sm:text-4xl text-2xl font-extrabold text-gray-800 tracking-wider'>
+            Explore Our Projects
+          </h1>
+        </div>
+        <div>
+          <div className='mb-6 sm:mb-0'>
+            <ProjectCard image='/Images/two.jpg' />
+          </div>
+          <div className='mb-6 sm:mb-0'>
+            <ProjectCardTwo image='/Images/two.jpg' />
+          </div>
+          <div className='mb-6 sm:mb-0'>
+            <ProjectCard image='/Images/three.jpg' />
+          </div>
+          <div className='mb-6 sm:mb-0'>
+            <ProjectCardTwo image='/Images/four.jpg' />
+          </div>
+        </div>
       </div>
-       <ProjectCard image="/Images/two.jpg"/>
-       <ProjectCardTwo image="/Images/two.jpg"/>
-       <ProjectCard image="/Images/three.jpg"/>
-       <ProjectCardTwo image="/Images/four.jpg"/>
-    </div>
-      <div className='flex justify-end mx-14'>
-      <Button variant="contained" style={buttonStyles}>
-      Show all <EastIcon />
-    </Button>
-     </div>
+      <div className='mx-6 mt-4 sm:flex sm:justify-end'>
+        <Button variant='contained' style={buttonStyles}>
+          Show all <EastIcon />
+        </Button>
+      </div>
     </div>
   );
 }
