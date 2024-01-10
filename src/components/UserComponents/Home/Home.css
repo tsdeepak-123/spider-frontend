@@ -1,0 +1,15 @@
+.home-container {
+    height: 100vh;
+    background-image: url('C:\Users\LENOVO\Desktop\My Projects\SpiderInteriors\frontend\public\Images\spider_background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    text-align: center;
+    height: 100vh;
+  }
+  
+  
+  
